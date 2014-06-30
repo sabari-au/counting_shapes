@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>questions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+function bigImg(x)
+{
+x.style.height="500px";
+x.style.width="700px";
+}
+
+function normalImg(x)
+{
+x.style.height="300px";
+x.style.width="600px";
+}
+        </script>
+        <style>
+             .bigbutton {alignment-adjust: right; font-family: Verdana, Arial, sans-serif;width: 400px; height : 150px; font-size: 100px;} 
+            body {background-color: black; text-align: center}
+             p{font-size: 100px;color: white}
+             .correct
+             {background-color: green}
+             .wrong
+             {background-color: red}
+             h1{font-size: 100px}
+             
+             .next{
+    background-image:url("images (3).jpg" ) ;
+    background-repeat:no-repeat;
+    backface-visibility: "next";
+    width:600px;
+    height:300px;
+    cursor:pointer;
+    background-color:black;
+    border:none;    
+}
+        </style>
+    </head>
+    <body>
+        <table> 
+        <br>
+        <br>
+        <br>
+        
+          <td class="correct">
+                <h1>Correct</h1>
+        <img border="0" class="correct" src="q41.jpg" align="left" alt="six" width="600" height="300" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  />
+            </td>
+            <td class="wrong">
+                <h1>Wrong</h1>
+        <img border="0" src="q42.jpg" class="wrong" align="right" alt="four" width="600" height="300" onmouseover="bigImg(this)" onmouseout="normalImg(this)" />
+            </td>
+            <br>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        
+        
+         <input type="button" value="<-" class="bigbutton" onclick="window.location.href='q4.html'"/>    
+        
+       
+          </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>NUMBERS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {background-color:black; text-align: center}
+p { font-size: "500" ;color:black; text-align: center}
+img { margin: central ; alignment-adjust: central ;border: black;color: white}
+h1 { color:white;font-size: "1000" ;margin: central ; alignment-adjust: right ;border: black;}
+h2 { color:white;font-size: "1000" ;margin: central ; alignment-adjust: right ;border: black;}
+input {background-color: white; margin-top: "20";alignment-adjust: top; width: "30" ;height: "40"; 
+}
+.bigbutton {alignment-adjust: right; font-family: Verdana, Arial, sans-serif;width: 300px; height : 150px; font-size: 100px;} 
+.next{
+    background-image:url("images (3).jpg" ) ;
+    background-repeat:no-repeat;
+    backface-visibility: "next";
+    width:600px;
+    height:300px;
+    cursor:pointer;
+    background-color:black;
+    border:none;    
+}
+
+</style>
+<script>
+function bigImg(x)
+{
+x.style.height="400px";
+x.style.width="800px";
+}
+
+function normalImg(x)
+{
+x.style.height="228px";
+x.style.width="304px";
+}
+function big(x)
+{
+    x.style.fontsize="100";
+}
+function normal(x)
+{
+    x.style.fontsize="20";
+}
+var fontSize = 1;
+function zoomIn() {
+    fontSize += 1;
+    document.body.style.fontSize = fontSize + "em";
+}
+function zoomOut() {
+    fontSize -= 1;
+    document.body.style.fontSize = fontSize + "em";
+}
+</script>
+
+</head>
+<body>
+    <form method ="post" action="nine.html">
+<input type="button"  class="bigbutton" value="+" onClick="zoomIn() "/>
+       <input type="button"  class="bigbutton" value="-" onClick="zoomOut()"/>
+       <br>
+       
+    <h1>EIGHT</h1>
+    <h2>Eight,eight,eight <br> Eight laddus for all of us!</h2> 
+        
+    <p onmousemove="big(this)" ></p>
+        <label> </label>
+        <img border="0" src="eight.jpg" align="center" alt="ONE" width="304" height="228" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+        <br>
+        <br>
+        <br>
+   <input type="button" value="<-" class="bigbutton" onclick="window.location.href='seven.html'"/>
+    &nbsp;&nbsp;&nbsp; <input type="button" value="->" class="bigbutton" onClick="window.location.href='nine.html'"/>
+    
+         
+    </body>
+</html>
